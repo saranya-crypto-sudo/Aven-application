@@ -1,4 +1,4 @@
-# Aven - Stress Support Mobile App
+# Aven - Stress Support Mobile App for teens
 
 A calm, supportive stress-support mobile application for Android and iOS. Aven helps users navigate stressful moments through short guided exercises including grounding, breathing, balanced thinking, task breakdown, and focus on controllable actions.
 
