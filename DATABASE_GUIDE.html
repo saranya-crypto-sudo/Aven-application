@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database Guide for Aven App</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px;
+            line-height: 1.6;
+            color: #333;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 15px;
+            margin-top: 40px;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 40px;
+            border-bottom: 1px solid #bdc3c7;
+            padding-bottom: 10px;
+        }
+        h3 {
+            color: #7f8c8d;
+            margin-top: 30px;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+        pre {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+        pre code {
+            background: none;
+            padding: 0;
+            color: #ecf0f1;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background: #3498db;
+            color: white;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+        blockquote {
+            border-left: 4px solid #3498db;
+            padding-left: 20px;
+            margin: 20px 0;
+            color: #7f8c8d;
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 0 8px 8px 0;
+        }
+        ul, ol {
+            margin: 20px 0;
+            padding-left: 30px;
+        }
+        li {
+            margin: 8px 0;
+        }
+        .print-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #3498db;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+        .print-button:hover {
+            background: #2980b9;
+        }
+        @media print {
+            .print-button {
+                display: none;
+            }
+            body {
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button class="print-button" onclick="window.print()">🖨️ Print / Save as PDF</button>
+
+    <h1>Database Guide for Aven App</h1>
+
+    <h2>Overview</h2>
+    <p>The Aven app uses <strong>SQLite</strong> for session history and <strong>MAUI Preferences API</strong> for user settings. All data is stored <strong>locally on the device</strong> - no cloud database required.</p>
+
+    <h2>1. Database Location</h2>
+    <h3>Where is the Database File Created?</h3>
+    <p>The database file <code>aven.db</code> is automatically created in the app's data directory:</p>
+    <pre><code>var databasePath = Path.Combine(FileSystem.AppDataDirectory, DatabaseName);</code></pre>
+
+    <h3>Actual File Locations by Platform:</h3>
+    <table>
+        <tr>
+            <th>Platform</th>
+            <th>Location</th>
+        </tr>
+        <tr>
+            <td><strong>Android</strong></td>
+            <td><code>/data/data/com.companyname.aven/files/aven.db</code></td>
+        </tr>
+        <tr>
+            <td><strong>iOS</strong></td>
+            <td><code>/var/mobile/Containers/Data/Application/[GUID]/Documents/aven.db</code></td>
+        </tr>
+        <tr>
+            <td><strong>Windows</strong></td>
+            <td><code>C:\Users\[Username]\AppData\Local\Aven\aven.db</code></td>
+        </tr>
+    </table>
+
+    <h2>2. Database Schema</h2>
+    <h3>Session Table (SQLite)</h3>
+    <table>
+        <tr>
+            <th>Column</th>
+            <th>Type</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Id</td>
+            <td>INTEGER (Primary Key, AutoIncrement)</td>
+            <td>Unique session ID</td>
+        </tr>
+        <tr>
+            <td>StartTime</td>
+            <td>DATETIME</td>
+            <td>When exercise started</td>
+        </tr>
+        <tr>
+            <td>EndTime</td>
+            <td>DATETIME (nullable)</td>
+            <td>When exercise ended</td>
+        </tr>
+        <tr>
+            <td>ExerciseType</td>
+            <td>TEXT</td>
+            <td>Exercise name (e.g., "Grounding")</td>
+        </tr>
+        <tr>
+            <td>IsCompleted</td>
+            <td>INTEGER (0/1)</td>
+            <td>Was exercise completed?</td>
+        </tr>
+        <tr>
+            <td>Feedback</td>
+            <td>TEXT (nullable)</td>
+            <td>User feedback ("Better", "About the same", "Worse")</td>
+        </tr>
+        <tr>
+            <td>Reflection</td>
+            <td>TEXT (nullable)</td>
+            <td>User's text reflection</td>
+        </tr>
+        <tr>
+            <td>Situation</td>
+            <td>TEXT (nullable)</td>
+            <td>Situation that led to session</td>
+        </tr>
+    </table>
+
+    <h2>3. How Data is Saved</h2>
+    <p>The app saves a session when:</p>
+    <ul>
+        <li>User starts an exercise</li>
+        <li>User completes or quits an exercise</li>
+        <li>User provides feedback</li>
+    </ul>
+
+    <h2>4. How to Fetch Data</h2>
+    <h3>Fetch All Sessions:</h3>
+    <pre><code>var sessions = await _storageService.GetSessionsAsync();
+// Returns: List&lt;Session&gt; ordered by StartTime (newest first)</code></pre>
+
+    <h3>Fetch Single Session by ID:</h3>
+    <pre><code>var session = await _storageService.GetSessionAsync(sessionId);
+// Returns: Session? (nullable)</code></pre>
+
+    <h2>5. Database Operations</h2>
+    <h3>Saving a Session:</h3>
+    <pre><code>var session = new Session
+{
+    StartTime = DateTime.Now,
+    ExerciseType = "GentleBreathing",
+    IsCompleted = true,
+    Feedback = "Better"
+};
+await _storageService.SaveSessionAsync(session);</code></pre>
+
+    <h3>Deleting a Session:</h3>
+    <pre><code>await _storageService.DeleteSessionAsync(sessionId);</code></pre>
+
+    <h2>6. Where to View Database During Development</h2>
+    <h3>Option 1: Using SQLite Browser (Recommended)</h3>
+    <p>Download <strong>DB Browser for SQLite</strong>: <a href="https://sqlitebrowser.org/">https://sqlitebrowser.org/</a></p>
+    <p>Navigate to the database file location and open <code>aven.db</code>.</p>
+
+    <h3>Option 2: Using Visual Studio Debugger</h3>
+    <p>Add breakpoints in <code>StorageService.cs</code> to inspect data in real-time.</p>
+
+    <h2>7. Database Initialization</h2>
+    <p>The database is initialized automatically when first accessed:</p>
+    <pre><code>public async Task InitializeAsync()
+{
+    if (_database != null)
+        return; // Already initialized
+    
+    var databasePath = Path.Combine(FileSystem.AppDataDirectory, DatabaseName);
+    _database = new SQLiteAsyncConnection(databasePath);
+    
+    // Creates the Session table if it doesn't exist
+    await _database.CreateTableAsync&lt;Session&gt;();
+}</code></pre>
+
+    <h2>8. User Preferences (Not in SQLite)</h2>
+    <p>User preferences are stored using MAUI's <strong>Preferences API</strong>, not SQLite:</p>
+    <ul>
+        <li><strong>Location:</strong> Platform-native storage (Shared Preferences on Android, UserDefaults on iOS, Registry on Windows)</li>
+        <li><strong>Why:</strong> Simple key-value storage, perfect for app settings</li>
+    </ul>
+
+    <h2>9. Adding New Database Fields</h2>
+    <p>To add new fields to the Session table:</p>
+    <ol>
+        <li>Update the <code>Session</code> model class</li>
+        <li>Update all session creation code</li>
+        <li>Handle existing data (may need to delete and reinstall app)</li>
+    </ol>
+
+    <h2>10. Querying the Database</h2>
+    <h3>Using LINQ:</h3>
+    <pre><code>// Get all completed sessions
+var completedSessions = await _database.Table&lt;Session&gt;()
+    .Where(s =&gt; s.IsCompleted == true)
+    .ToListAsync();
+
+// Get sessions from last 7 days
+var recentSessions = await _database.Table&lt;Session&gt;()
+    .Where(s =&gt; s.StartTime &gt;= DateTime.Now.AddDays(-7))
+    .ToListAsync();</code></pre>
+
+    <h2>11. Database Reset (Clear All Data)</h2>
+    <p>The app has a method to delete all data:</p>
+    <pre><code>await _storageService.DeleteAllSessionsAsync();</code></pre>
+    <p>This is called from Settings → "Delete All Data" button.</p>
+
+    <h2>12. Summary</h2>
+    <table>
+        <tr>
+            <th>Data Type</th>
+            <th>Storage</th>
+            <th>Location</th>
+        </tr>
+        <tr>
+            <td>Session History</td>
+            <td>SQLite</td>
+            <td>Device app data directory</td>
+        </tr>
+        <tr>
+            <td>User Favorites</td>
+            <td>Preferences API</td>
+            <td>Platform-native storage</td>
+        </tr>
+        <tr>
+            <td>User Settings</td>
+            <td>Preferences API</td>
+            <td>Platform-native storage</td>
+        </tr>
+    </table>
+
+    <h2>13. Quick Reference</h2>
+    <pre><code>// Save
+await _storageService.SaveSessionAsync(session);
+
+// Fetch all
+var sessions = await _storageService.GetSessionsAsync();
+
+// Delete
+await _storageService.DeleteSessionAsync(id);
+
+// Preferences
+await _storageService.SavePreferencesAsync(preferences);
+var prefs = await _storageService.GetPreferencesAsync();</code></pre>
+
+    <h2>14. Testing Database Operations</h2>
+    <p>The project includes unit tests in <code>Aven.Tests/</code>:</p>
+    <ul>
+        <li><code>SituationMappingServiceTests.cs</code> - Tests exercise recommendations</li>
+        <li><code>SessionTests.cs</code> - Tests session model</li>
+    </ul>
+
+    <h2>15. Common Database Issues</h2>
+    <table>
+        <tr>
+            <th>Issue</th>
+            <th>Cause</th>
+            <th>Solution</th>
+        </tr>
+        <tr>
+            <td>Database Locked</td>
+            <td>Multiple concurrent operations</td>
+            <td>SQLite-net-pcl handles this automatically</td>
+        </tr>
+        <tr>
+            <td>Table Not Found</td>
+            <td>Database not initialized</td>
+            <td>Ensure <code>InitializeAsync()</code> is called</td>
+        </tr>
+        <tr>
+            <td>Data Not Persisting</td>
+            <td>Not awaiting async methods</td>
+            <td>Always use <code>await</code> when calling storage methods</td>
+        </tr>
+    </table>
+
+    <h2>16. Final Notes</h2>
+    <p>This guide covers everything you need to know about the database implementation in the Aven app. The database is simple, local-only, and designed for privacy.</p>
+
+    <blockquote>
+        <strong>Key Points:</strong>
+        <ul>
+            <li>✅ No Manual Database Creation Required - It's created automatically</li>
+            <li>✅ Local-Only Storage - No cloud database needed</li>
+            <li>✅ Privacy-First - All data stays on device</li>
+            <li>✅ Simple Schema - Just one table (Session)</li>
+            <li>✅ Preferences API - Settings stored platform-natively</li>
+        </ul>
+    </blockquote>
+
+</body>
+</html>

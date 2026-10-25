@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Aven.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:views="clr-namespace:Aven.Views"
+    Title="Aven"
+    FlyoutBehavior="Disabled"
+    Shell.TabBarBackgroundColor="{StaticResource Surface}"
+    Shell.TabBarForegroundColor="{StaticResource Primary}"
+    Shell.TabBarTitleColor="{StaticResource Primary}"
+    Shell.TabBarUnselectedColor="{StaticResource TextSecondary}">
+
+    <TabBar Route="MainTabs">
+        <ShellContent
+            Title="Home"
+            Icon="tab_home"
+            Route="Home"
+            ContentTemplate="{DataTemplate views:HomeView}" />
+        <ShellContent
+            Title="Situations"
+            Icon="tab_situations"
+            Route="Situations"
+            ContentTemplate="{DataTemplate views:SituationsView}" />
+        <ShellContent
+            Title="Favorites"
+            Icon="tab_favorites"
+            Route="Favorites"
+            ContentTemplate="{DataTemplate views:FavoritesView}" />
+        <ShellContent
+            Title="Progress"
+            Icon="tab_progress"
+            Route="Progress"
+            ContentTemplate="{DataTemplate views:ProgressView}" />
+        <ShellContent
+            Title="More"
+            Icon="tab_more"
+            Route="More"
+            ContentTemplate="{DataTemplate views:MoreView}" />
+    </TabBar>
+
+</Shell>

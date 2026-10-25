@@ -1,0 +1,275 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = true
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.VerifyReferenceTrimCompatibility = 
+build_property.VerifyReferenceAotCompatibility = 
+build_property.MauiXamlNoWarn = 
+build_property.EnableMauiXamlDiagnostics = true
+build_property.MauiXamlLineInfo = 
+build_property.Configuration = Debug
+build_property.MauiXamlHotReload = 
+build_property.EnablePreviewFeatures = 
+build_property.MvvmToolkitEnableINotifyPropertyChangingSupport = true
+build_property._MvvmToolkitIsUsingWindowsRuntimePack = false
+build_property.CsWinRTComponent = 
+build_property.CsWinRTAotOptimizerEnabled = 
+build_property.CsWinRTAotWarningLevel = 
+build_property.TargetFramework = net10.0-android
+build_property.TargetFrameworkIdentifier = .NETCoreApp
+build_property.TargetFrameworkVersion = v10.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EntryPointFilePath = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Aven
+build_property.ProjectDir = C:\Users\DivakarSakthivel\Documents\Aven_Cursor\Aven_Mobile_Application\Aven\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.EffectiveAnalysisLevelStyle = 10.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/DivakarSakthivel/Documents/Aven_Cursor/Aven_Mobile_Application/Aven/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Aven.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[C:/Users/DivakarSakthivel/Documents/Aven_Cursor/Aven_Mobile_Application/Aven/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Aven.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[C:/Users/DivakarSakthivel/Documents/Aven_Cursor/Aven_Mobile_Application/Aven/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Aven.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[C:/Users/DivakarSakthivel/Documents/Aven_Cursor/Aven_Mobile_Application/Aven/Resources/Styles/Accessibility.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Aven.Resources.Styles.Accessibility.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Accessibility.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Accessibility.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[C:/Users/DivakarSakthivel/Documents/Aven_Cursor/Aven_Mobile_Application/Aven/Resources/Styles/AppStyles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Aven.Resources.Styles.AppStyles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\AppStyles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\AppStyles.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[C:/Users/DivakarSakthivel/Documents/Aven_Cursor/Aven_Mobile_Application/Aven/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Aven.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[C:/Users/DivakarSakthivel/Documents/Aven_Cursor/Aven_Mobile_Application/Aven/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Aven.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[C:/Users/DivakarSakthivel/Documents/Aven_Cursor/Aven_Mobile_Application/Aven/Views/ExerciseSelectionView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Aven.Views.ExerciseSelectionView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ExerciseSelectionView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ExerciseSelectionView.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[C:/Users/DivakarSakthivel/Documents/Aven_Cursor/Aven_Mobile_Application/Aven/Views/Exercises/BalancedThinkingView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Aven.Views.Exercises.BalancedThinkingView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Exercises\BalancedThinkingView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Exercises\BalancedThinkingView.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[C:/Users/DivakarSakthivel/Documents/Aven_Cursor/Aven_Mobile_Application/Aven/Views/Exercises/BreathingCoachView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Aven.Views.Exercises.BreathingCoachView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Exercises\BreathingCoachView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Exercises\BreathingCoachView.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[C:/Users/DivakarSakthivel/Documents/Aven_Cursor/Aven_Mobile_Application/Aven/Views/Exercises/FocusControllableActionsView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Aven.Views.Exercises.FocusControllableActionsView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Exercises\FocusControllableActionsView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Exercises\FocusControllableActionsView.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[C:/Users/DivakarSakthivel/Documents/Aven_Cursor/Aven_Mobile_Application/Aven/Views/Exercises/GentleBreathingView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Aven.Views.Exercises.GentleBreathingView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Exercises\GentleBreathingView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Exercises\GentleBreathingView.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[C:/Users/DivakarSakthivel/Documents/Aven_Cursor/Aven_Mobile_Application/Aven/Views/Exercises/GroundingView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Aven.Views.Exercises.GroundingView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Exercises\GroundingView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Exercises\GroundingView.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[C:/Users/DivakarSakthivel/Documents/Aven_Cursor/Aven_Mobile_Application/Aven/Views/Exercises/GuidedExerciseView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Aven.Views.Exercises.GuidedExerciseView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Exercises\GuidedExerciseView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Exercises\GuidedExerciseView.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[C:/Users/DivakarSakthivel/Documents/Aven_Cursor/Aven_Mobile_Application/Aven/Views/Exercises/TaskBreakdownView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Aven.Views.Exercises.TaskBreakdownView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Exercises\TaskBreakdownView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Exercises\TaskBreakdownView.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[C:/Users/DivakarSakthivel/Documents/Aven_Cursor/Aven_Mobile_Application/Aven/Views/FavoritesView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Aven.Views.FavoritesView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\FavoritesView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\FavoritesView.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[C:/Users/DivakarSakthivel/Documents/Aven_Cursor/Aven_Mobile_Application/Aven/Views/FeedbackView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Aven.Views.FeedbackView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\FeedbackView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\FeedbackView.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[C:/Users/DivakarSakthivel/Documents/Aven_Cursor/Aven_Mobile_Application/Aven/Views/HelpMeResetView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Aven.Views.HelpMeResetView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\HelpMeResetView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\HelpMeResetView.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[C:/Users/DivakarSakthivel/Documents/Aven_Cursor/Aven_Mobile_Application/Aven/Views/HomeView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Aven.Views.HomeView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\HomeView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\HomeView.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[C:/Users/DivakarSakthivel/Documents/Aven_Cursor/Aven_Mobile_Application/Aven/Views/LearnView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Aven.Views.LearnView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\LearnView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\LearnView.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[C:/Users/DivakarSakthivel/Documents/Aven_Cursor/Aven_Mobile_Application/Aven/Views/MoreView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Aven.Views.MoreView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\MoreView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\MoreView.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[C:/Users/DivakarSakthivel/Documents/Aven_Cursor/Aven_Mobile_Application/Aven/Views/ProgressView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Aven.Views.ProgressView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ProgressView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ProgressView.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[C:/Users/DivakarSakthivel/Documents/Aven_Cursor/Aven_Mobile_Application/Aven/Views/SettingsView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Aven.Views.SettingsView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\SettingsView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\SettingsView.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[C:/Users/DivakarSakthivel/Documents/Aven_Cursor/Aven_Mobile_Application/Aven/Views/SituationsView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Aven.Views.SituationsView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\SituationsView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\SituationsView.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 

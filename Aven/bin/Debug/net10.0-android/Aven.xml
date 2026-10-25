@@ -1,0 +1,610 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Aven</name>
+    </assembly>
+    <members>
+        <member name="T:Aven.ViewModels.BaseViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:Aven.ViewModels.BaseViewModel.IsBusy">
+            <inheritdoc cref="F:Aven.ViewModels.BaseViewModel._isBusy"/>
+        </member>
+        <member name="P:Aven.ViewModels.BaseViewModel.Title">
+            <inheritdoc cref="F:Aven.ViewModels.BaseViewModel._title"/>
+        </member>
+        <member name="T:Aven.ViewModels.ExerciseSelectionViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:Aven.ViewModels.ExerciseSelectionViewModel.RecommendedExercises">
+            <inheritdoc cref="F:Aven.ViewModels.ExerciseSelectionViewModel._recommendedExercises"/>
+        </member>
+        <member name="P:Aven.ViewModels.ExerciseSelectionViewModel.AllExercises">
+            <inheritdoc cref="F:Aven.ViewModels.ExerciseSelectionViewModel._allExercises"/>
+        </member>
+        <member name="P:Aven.ViewModels.ExerciseSelectionViewModel.SituationId">
+            <inheritdoc cref="F:Aven.ViewModels.ExerciseSelectionViewModel._situationId"/>
+        </member>
+        <member name="F:Aven.ViewModels.ExerciseSelectionViewModel.selectExerciseCommand">
+            <summary>The backing field for <see cref="P:Aven.ViewModels.ExerciseSelectionViewModel.SelectExerciseCommand"/>.</summary>
+        </member>
+        <member name="P:Aven.ViewModels.ExerciseSelectionViewModel.SelectExerciseCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:Aven.ViewModels.ExerciseSelectionViewModel.SelectExerciseAsync(Aven.Models.Exercise)"/>.</summary>
+        </member>
+        <member name="T:Aven.ViewModels.Exercises.BalancedThinkingViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:Aven.ViewModels.Exercises.BalancedThinkingViewModel.CurrentInput">
+            <inheritdoc cref="F:Aven.ViewModels.Exercises.BalancedThinkingViewModel._currentInput"/>
+        </member>
+        <member name="F:Aven.ViewModels.Exercises.BalancedThinkingViewModel.nextStepCommand">
+            <summary>The backing field for <see cref="P:Aven.ViewModels.Exercises.BalancedThinkingViewModel.NextStepCommand"/>.</summary>
+        </member>
+        <member name="P:Aven.ViewModels.Exercises.BalancedThinkingViewModel.NextStepCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Aven.ViewModels.Exercises.BalancedThinkingViewModel.NextStepAsync"/>.</summary>
+        </member>
+        <member name="F:Aven.ViewModels.Exercises.BalancedThinkingViewModel.completeCommand">
+            <summary>The backing field for <see cref="P:Aven.ViewModels.Exercises.BalancedThinkingViewModel.CompleteCommand"/>.</summary>
+        </member>
+        <member name="P:Aven.ViewModels.Exercises.BalancedThinkingViewModel.CompleteCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Aven.ViewModels.Exercises.BalancedThinkingViewModel.CompleteAsync"/>.</summary>
+        </member>
+        <member name="F:Aven.ViewModels.Exercises.BalancedThinkingViewModel.quitCommand">
+            <summary>The backing field for <see cref="P:Aven.ViewModels.Exercises.BalancedThinkingViewModel.QuitCommand"/>.</summary>
+        </member>
+        <member name="P:Aven.ViewModels.Exercises.BalancedThinkingViewModel.QuitCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Aven.ViewModels.Exercises.BalancedThinkingViewModel.QuitAsync"/>.</summary>
+        </member>
+        <member name="T:Aven.ViewModels.Exercises.BreathingCoachViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:Aven.ViewModels.Exercises.BreathingCoachViewModel.PhaseName">
+            <inheritdoc cref="F:Aven.ViewModels.Exercises.BreathingCoachViewModel._phaseName"/>
+        </member>
+        <member name="P:Aven.ViewModels.Exercises.BreathingCoachViewModel.CircleScale">
+            <inheritdoc cref="F:Aven.ViewModels.Exercises.BreathingCoachViewModel._circleScale"/>
+        </member>
+        <member name="P:Aven.ViewModels.Exercises.BreathingCoachViewModel.IsRunning">
+            <inheritdoc cref="F:Aven.ViewModels.Exercises.BreathingCoachViewModel._isRunning"/>
+        </member>
+        <member name="F:Aven.ViewModels.Exercises.BreathingCoachViewModel.startCommand">
+            <summary>The backing field for <see cref="P:Aven.ViewModels.Exercises.BreathingCoachViewModel.StartCommand"/>.</summary>
+        </member>
+        <member name="P:Aven.ViewModels.Exercises.BreathingCoachViewModel.StartCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Aven.ViewModels.Exercises.BreathingCoachViewModel.StartAsync"/>.</summary>
+        </member>
+        <member name="F:Aven.ViewModels.Exercises.BreathingCoachViewModel.finishCommand">
+            <summary>The backing field for <see cref="P:Aven.ViewModels.Exercises.BreathingCoachViewModel.FinishCommand"/>.</summary>
+        </member>
+        <member name="P:Aven.ViewModels.Exercises.BreathingCoachViewModel.FinishCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Aven.ViewModels.Exercises.BreathingCoachViewModel.FinishAsync"/>.</summary>
+        </member>
+        <member name="F:Aven.ViewModels.Exercises.BreathingCoachViewModel.quitCommand">
+            <summary>The backing field for <see cref="P:Aven.ViewModels.Exercises.BreathingCoachViewModel.QuitCommand"/>.</summary>
+        </member>
+        <member name="P:Aven.ViewModels.Exercises.BreathingCoachViewModel.QuitCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Aven.ViewModels.Exercises.BreathingCoachViewModel.QuitAsync"/>.</summary>
+        </member>
+        <member name="T:Aven.ViewModels.Exercises.FocusControllableActionsViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:Aven.ViewModels.Exercises.FocusControllableActionsViewModel.OutcomeInput">
+            <inheritdoc cref="F:Aven.ViewModels.Exercises.FocusControllableActionsViewModel._outcomeInput"/>
+        </member>
+        <member name="P:Aven.ViewModels.Exercises.FocusControllableActionsViewModel.ActionInput">
+            <inheritdoc cref="F:Aven.ViewModels.Exercises.FocusControllableActionsViewModel._actionInput"/>
+        </member>
+        <member name="F:Aven.ViewModels.Exercises.FocusControllableActionsViewModel.nextStepCommand">
+            <summary>The backing field for <see cref="P:Aven.ViewModels.Exercises.FocusControllableActionsViewModel.NextStepCommand"/>.</summary>
+        </member>
+        <member name="P:Aven.ViewModels.Exercises.FocusControllableActionsViewModel.NextStepCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Aven.ViewModels.Exercises.FocusControllableActionsViewModel.NextStepAsync"/>.</summary>
+        </member>
+        <member name="F:Aven.ViewModels.Exercises.FocusControllableActionsViewModel.completeCommand">
+            <summary>The backing field for <see cref="P:Aven.ViewModels.Exercises.FocusControllableActionsViewModel.CompleteCommand"/>.</summary>
+        </member>
+        <member name="P:Aven.ViewModels.Exercises.FocusControllableActionsViewModel.CompleteCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Aven.ViewModels.Exercises.FocusControllableActionsViewModel.CompleteAsync"/>.</summary>
+        </member>
+        <member name="F:Aven.ViewModels.Exercises.FocusControllableActionsViewModel.quitCommand">
+            <summary>The backing field for <see cref="P:Aven.ViewModels.Exercises.FocusControllableActionsViewModel.QuitCommand"/>.</summary>
+        </member>
+        <member name="P:Aven.ViewModels.Exercises.FocusControllableActionsViewModel.QuitCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Aven.ViewModels.Exercises.FocusControllableActionsViewModel.QuitAsync"/>.</summary>
+        </member>
+        <member name="T:Aven.ViewModels.Exercises.GentleBreathingViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:Aven.ViewModels.Exercises.GentleBreathingViewModel.IsBreathingIn">
+            <inheritdoc cref="F:Aven.ViewModels.Exercises.GentleBreathingViewModel._isBreathingIn"/>
+        </member>
+        <member name="P:Aven.ViewModels.Exercises.GentleBreathingViewModel.CircleScale">
+            <inheritdoc cref="F:Aven.ViewModels.Exercises.GentleBreathingViewModel._circleScale"/>
+        </member>
+        <member name="F:Aven.ViewModels.Exercises.GentleBreathingViewModel.startCommand">
+            <summary>The backing field for <see cref="P:Aven.ViewModels.Exercises.GentleBreathingViewModel.StartCommand"/>.</summary>
+        </member>
+        <member name="P:Aven.ViewModels.Exercises.GentleBreathingViewModel.StartCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Aven.ViewModels.Exercises.GentleBreathingViewModel.StartAsync"/>.</summary>
+        </member>
+        <member name="F:Aven.ViewModels.Exercises.GentleBreathingViewModel.stopCommand">
+            <summary>The backing field for <see cref="P:Aven.ViewModels.Exercises.GentleBreathingViewModel.StopCommand"/>.</summary>
+        </member>
+        <member name="P:Aven.ViewModels.Exercises.GentleBreathingViewModel.StopCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Aven.ViewModels.Exercises.GentleBreathingViewModel.StopAsync"/>.</summary>
+        </member>
+        <member name="F:Aven.ViewModels.Exercises.GentleBreathingViewModel.tryGroundingCommand">
+            <summary>The backing field for <see cref="P:Aven.ViewModels.Exercises.GentleBreathingViewModel.TryGroundingCommand"/>.</summary>
+        </member>
+        <member name="P:Aven.ViewModels.Exercises.GentleBreathingViewModel.TryGroundingCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Aven.ViewModels.Exercises.GentleBreathingViewModel.TryGroundingAsync"/>.</summary>
+        </member>
+        <member name="F:Aven.ViewModels.Exercises.GentleBreathingViewModel.quitCommand">
+            <summary>The backing field for <see cref="P:Aven.ViewModels.Exercises.GentleBreathingViewModel.QuitCommand"/>.</summary>
+        </member>
+        <member name="P:Aven.ViewModels.Exercises.GentleBreathingViewModel.QuitCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Aven.ViewModels.Exercises.GentleBreathingViewModel.QuitAsync"/>.</summary>
+        </member>
+        <member name="T:Aven.ViewModels.Exercises.GroundingViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="F:Aven.ViewModels.Exercises.GroundingViewModel.nextStepCommand">
+            <summary>The backing field for <see cref="P:Aven.ViewModels.Exercises.GroundingViewModel.NextStepCommand"/>.</summary>
+        </member>
+        <member name="P:Aven.ViewModels.Exercises.GroundingViewModel.NextStepCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Aven.ViewModels.Exercises.GroundingViewModel.NextStepAsync"/>.</summary>
+        </member>
+        <member name="F:Aven.ViewModels.Exercises.GroundingViewModel.continueCommand">
+            <summary>The backing field for <see cref="P:Aven.ViewModels.Exercises.GroundingViewModel.ContinueCommand"/>.</summary>
+        </member>
+        <member name="P:Aven.ViewModels.Exercises.GroundingViewModel.ContinueCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Aven.ViewModels.Exercises.GroundingViewModel.ContinueAsync"/>.</summary>
+        </member>
+        <member name="F:Aven.ViewModels.Exercises.GroundingViewModel.quitCommand">
+            <summary>The backing field for <see cref="P:Aven.ViewModels.Exercises.GroundingViewModel.QuitCommand"/>.</summary>
+        </member>
+        <member name="P:Aven.ViewModels.Exercises.GroundingViewModel.QuitCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Aven.ViewModels.Exercises.GroundingViewModel.QuitAsync"/>.</summary>
+        </member>
+        <member name="T:Aven.ViewModels.Exercises.GuidedExerciseViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="F:Aven.ViewModels.Exercises.GuidedExerciseViewModel.nextStepCommand">
+            <summary>The backing field for <see cref="P:Aven.ViewModels.Exercises.GuidedExerciseViewModel.NextStepCommand"/>.</summary>
+        </member>
+        <member name="P:Aven.ViewModels.Exercises.GuidedExerciseViewModel.NextStepCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Aven.ViewModels.Exercises.GuidedExerciseViewModel.NextStepAsync"/>.</summary>
+        </member>
+        <member name="F:Aven.ViewModels.Exercises.GuidedExerciseViewModel.continueCommand">
+            <summary>The backing field for <see cref="P:Aven.ViewModels.Exercises.GuidedExerciseViewModel.ContinueCommand"/>.</summary>
+        </member>
+        <member name="P:Aven.ViewModels.Exercises.GuidedExerciseViewModel.ContinueCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Aven.ViewModels.Exercises.GuidedExerciseViewModel.ContinueAsync"/>.</summary>
+        </member>
+        <member name="F:Aven.ViewModels.Exercises.GuidedExerciseViewModel.quitCommand">
+            <summary>The backing field for <see cref="P:Aven.ViewModels.Exercises.GuidedExerciseViewModel.QuitCommand"/>.</summary>
+        </member>
+        <member name="P:Aven.ViewModels.Exercises.GuidedExerciseViewModel.QuitCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Aven.ViewModels.Exercises.GuidedExerciseViewModel.QuitAsync"/>.</summary>
+        </member>
+        <member name="T:Aven.ViewModels.Exercises.TaskBreakdownViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:Aven.ViewModels.Exercises.TaskBreakdownViewModel.SelectedOption">
+            <inheritdoc cref="F:Aven.ViewModels.Exercises.TaskBreakdownViewModel._selectedOption"/>
+        </member>
+        <member name="P:Aven.ViewModels.Exercises.TaskBreakdownViewModel.TaskInput">
+            <inheritdoc cref="F:Aven.ViewModels.Exercises.TaskBreakdownViewModel._taskInput"/>
+        </member>
+        <member name="P:Aven.ViewModels.Exercises.TaskBreakdownViewModel.FirstStepInput">
+            <inheritdoc cref="F:Aven.ViewModels.Exercises.TaskBreakdownViewModel._firstStepInput"/>
+        </member>
+        <member name="F:Aven.ViewModels.Exercises.TaskBreakdownViewModel.nextStepCommand">
+            <summary>The backing field for <see cref="P:Aven.ViewModels.Exercises.TaskBreakdownViewModel.NextStepCommand"/>.</summary>
+        </member>
+        <member name="P:Aven.ViewModels.Exercises.TaskBreakdownViewModel.NextStepCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:Aven.ViewModels.Exercises.TaskBreakdownViewModel.NextStepAsync(System.Object)"/>.</summary>
+        </member>
+        <member name="F:Aven.ViewModels.Exercises.TaskBreakdownViewModel.completeCommand">
+            <summary>The backing field for <see cref="P:Aven.ViewModels.Exercises.TaskBreakdownViewModel.CompleteCommand"/>.</summary>
+        </member>
+        <member name="P:Aven.ViewModels.Exercises.TaskBreakdownViewModel.CompleteCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Aven.ViewModels.Exercises.TaskBreakdownViewModel.CompleteAsync"/>.</summary>
+        </member>
+        <member name="F:Aven.ViewModels.Exercises.TaskBreakdownViewModel.quitCommand">
+            <summary>The backing field for <see cref="P:Aven.ViewModels.Exercises.TaskBreakdownViewModel.QuitCommand"/>.</summary>
+        </member>
+        <member name="P:Aven.ViewModels.Exercises.TaskBreakdownViewModel.QuitCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Aven.ViewModels.Exercises.TaskBreakdownViewModel.QuitAsync"/>.</summary>
+        </member>
+        <member name="T:Aven.ViewModels.FavoritesViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:Aven.ViewModels.FavoritesViewModel.FavoriteExercises">
+            <inheritdoc cref="F:Aven.ViewModels.FavoritesViewModel._favoriteExercises"/>
+        </member>
+        <member name="P:Aven.ViewModels.FavoritesViewModel.IsEmpty">
+            <inheritdoc cref="F:Aven.ViewModels.FavoritesViewModel._isEmpty"/>
+        </member>
+        <member name="F:Aven.ViewModels.FavoritesViewModel.selectExerciseCommand">
+            <summary>The backing field for <see cref="P:Aven.ViewModels.FavoritesViewModel.SelectExerciseCommand"/>.</summary>
+        </member>
+        <member name="P:Aven.ViewModels.FavoritesViewModel.SelectExerciseCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:Aven.ViewModels.FavoritesViewModel.SelectExerciseAsync(Aven.Models.Exercise)"/>.</summary>
+        </member>
+        <member name="F:Aven.ViewModels.FavoritesViewModel.removeFavoriteCommand">
+            <summary>The backing field for <see cref="P:Aven.ViewModels.FavoritesViewModel.RemoveFavoriteCommand"/>.</summary>
+        </member>
+        <member name="P:Aven.ViewModels.FavoritesViewModel.RemoveFavoriteCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:Aven.ViewModels.FavoritesViewModel.RemoveFavoriteAsync(Aven.Models.Exercise)"/>.</summary>
+        </member>
+        <member name="T:Aven.ViewModels.FeedbackViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:Aven.ViewModels.FeedbackViewModel.ReflectionInput">
+            <inheritdoc cref="F:Aven.ViewModels.FeedbackViewModel._reflectionInput"/>
+        </member>
+        <member name="F:Aven.ViewModels.FeedbackViewModel.submitFeedbackCommand">
+            <summary>The backing field for <see cref="P:Aven.ViewModels.FeedbackViewModel.SubmitFeedbackCommand"/>.</summary>
+        </member>
+        <member name="P:Aven.ViewModels.FeedbackViewModel.SubmitFeedbackCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:Aven.ViewModels.FeedbackViewModel.SubmitFeedbackAsync(System.String)"/>.</summary>
+        </member>
+        <member name="F:Aven.ViewModels.FeedbackViewModel.skipCommand">
+            <summary>The backing field for <see cref="P:Aven.ViewModels.FeedbackViewModel.SkipCommand"/>.</summary>
+        </member>
+        <member name="P:Aven.ViewModels.FeedbackViewModel.SkipCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Aven.ViewModels.FeedbackViewModel.SkipAsync"/>.</summary>
+        </member>
+        <member name="T:Aven.ViewModels.HelpMeResetViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:Aven.ViewModels.HelpMeResetViewModel.ResetExercises">
+            <inheritdoc cref="F:Aven.ViewModels.HelpMeResetViewModel._resetExercises"/>
+        </member>
+        <member name="F:Aven.ViewModels.HelpMeResetViewModel.selectExerciseCommand">
+            <summary>The backing field for <see cref="P:Aven.ViewModels.HelpMeResetViewModel.SelectExerciseCommand"/>.</summary>
+        </member>
+        <member name="P:Aven.ViewModels.HelpMeResetViewModel.SelectExerciseCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:Aven.ViewModels.HelpMeResetViewModel.SelectExerciseAsync(Aven.Models.Exercise)"/>.</summary>
+        </member>
+        <member name="F:Aven.ViewModels.HelpMeResetViewModel.goBackCommand">
+            <summary>The backing field for <see cref="P:Aven.ViewModels.HelpMeResetViewModel.GoBackCommand"/>.</summary>
+        </member>
+        <member name="P:Aven.ViewModels.HelpMeResetViewModel.GoBackCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Aven.ViewModels.HelpMeResetViewModel.GoBackAsync"/>.</summary>
+        </member>
+        <member name="T:Aven.ViewModels.HomeViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="F:Aven.ViewModels.HomeViewModel.goToHelpMeResetCommand">
+            <summary>The backing field for <see cref="P:Aven.ViewModels.HomeViewModel.GoToHelpMeResetCommand"/>.</summary>
+        </member>
+        <member name="P:Aven.ViewModels.HomeViewModel.GoToHelpMeResetCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Aven.ViewModels.HomeViewModel.GoToHelpMeResetAsync"/>.</summary>
+        </member>
+        <member name="F:Aven.ViewModels.HomeViewModel.goToFavoritesCommand">
+            <summary>The backing field for <see cref="P:Aven.ViewModels.HomeViewModel.GoToFavoritesCommand"/>.</summary>
+        </member>
+        <member name="P:Aven.ViewModels.HomeViewModel.GoToFavoritesCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Aven.ViewModels.HomeViewModel.GoToFavoritesAsync"/>.</summary>
+        </member>
+        <member name="F:Aven.ViewModels.HomeViewModel.goToProgressCommand">
+            <summary>The backing field for <see cref="P:Aven.ViewModels.HomeViewModel.GoToProgressCommand"/>.</summary>
+        </member>
+        <member name="P:Aven.ViewModels.HomeViewModel.GoToProgressCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Aven.ViewModels.HomeViewModel.GoToProgressAsync"/>.</summary>
+        </member>
+        <member name="F:Aven.ViewModels.HomeViewModel.goToSituationsCommand">
+            <summary>The backing field for <see cref="P:Aven.ViewModels.HomeViewModel.GoToSituationsCommand"/>.</summary>
+        </member>
+        <member name="P:Aven.ViewModels.HomeViewModel.GoToSituationsCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Aven.ViewModels.HomeViewModel.GoToSituationsAsync"/>.</summary>
+        </member>
+        <member name="F:Aven.ViewModels.HomeViewModel.goToLearnCommand">
+            <summary>The backing field for <see cref="P:Aven.ViewModels.HomeViewModel.GoToLearnCommand"/>.</summary>
+        </member>
+        <member name="P:Aven.ViewModels.HomeViewModel.GoToLearnCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Aven.ViewModels.HomeViewModel.GoToLearnAsync"/>.</summary>
+        </member>
+        <member name="F:Aven.ViewModels.HomeViewModel.goToSettingsCommand">
+            <summary>The backing field for <see cref="P:Aven.ViewModels.HomeViewModel.GoToSettingsCommand"/>.</summary>
+        </member>
+        <member name="P:Aven.ViewModels.HomeViewModel.GoToSettingsCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Aven.ViewModels.HomeViewModel.GoToSettingsAsync"/>.</summary>
+        </member>
+        <member name="T:Aven.ViewModels.LearnViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:Aven.ViewModels.LearnViewModel.Videos">
+            <inheritdoc cref="F:Aven.ViewModels.LearnViewModel._videos"/>
+        </member>
+        <member name="F:Aven.ViewModels.LearnViewModel.watchVideoCommand">
+            <summary>The backing field for <see cref="P:Aven.ViewModels.LearnViewModel.WatchVideoCommand"/>.</summary>
+        </member>
+        <member name="P:Aven.ViewModels.LearnViewModel.WatchVideoCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:Aven.ViewModels.LearnViewModel.WatchVideoAsync(Aven.ViewModels.LearnVideo)"/>.</summary>
+        </member>
+        <member name="T:Aven.ViewModels.MoreViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="F:Aven.ViewModels.MoreViewModel.goToLearnCommand">
+            <summary>The backing field for <see cref="P:Aven.ViewModels.MoreViewModel.GoToLearnCommand"/>.</summary>
+        </member>
+        <member name="P:Aven.ViewModels.MoreViewModel.GoToLearnCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Aven.ViewModels.MoreViewModel.GoToLearnAsync"/>.</summary>
+        </member>
+        <member name="F:Aven.ViewModels.MoreViewModel.goToSettingsCommand">
+            <summary>The backing field for <see cref="P:Aven.ViewModels.MoreViewModel.GoToSettingsCommand"/>.</summary>
+        </member>
+        <member name="P:Aven.ViewModels.MoreViewModel.GoToSettingsCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Aven.ViewModels.MoreViewModel.GoToSettingsAsync"/>.</summary>
+        </member>
+        <member name="F:Aven.ViewModels.MoreViewModel.goToResetCommand">
+            <summary>The backing field for <see cref="P:Aven.ViewModels.MoreViewModel.GoToResetCommand"/>.</summary>
+        </member>
+        <member name="P:Aven.ViewModels.MoreViewModel.GoToResetCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Aven.ViewModels.MoreViewModel.GoToResetAsync"/>.</summary>
+        </member>
+        <member name="T:Aven.ViewModels.ProgressViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:Aven.ViewModels.ProgressViewModel.Sessions">
+            <inheritdoc cref="F:Aven.ViewModels.ProgressViewModel._sessions"/>
+        </member>
+        <member name="P:Aven.ViewModels.ProgressViewModel.IsEmpty">
+            <inheritdoc cref="F:Aven.ViewModels.ProgressViewModel._isEmpty"/>
+        </member>
+        <member name="F:Aven.ViewModels.ProgressViewModel.deleteSessionCommand">
+            <summary>The backing field for <see cref="P:Aven.ViewModels.ProgressViewModel.DeleteSessionCommand"/>.</summary>
+        </member>
+        <member name="P:Aven.ViewModels.ProgressViewModel.DeleteSessionCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:Aven.ViewModels.ProgressViewModel.DeleteSessionAsync(Aven.Models.Session)"/>.</summary>
+        </member>
+        <member name="F:Aven.ViewModels.ProgressViewModel.deleteAllSessionsCommand">
+            <summary>The backing field for <see cref="P:Aven.ViewModels.ProgressViewModel.DeleteAllSessionsCommand"/>.</summary>
+        </member>
+        <member name="P:Aven.ViewModels.ProgressViewModel.DeleteAllSessionsCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Aven.ViewModels.ProgressViewModel.DeleteAllSessionsAsync"/>.</summary>
+        </member>
+        <member name="T:Aven.ViewModels.SettingsViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:Aven.ViewModels.SettingsViewModel.Preferences">
+            <inheritdoc cref="F:Aven.ViewModels.SettingsViewModel._preferences"/>
+        </member>
+        <member name="F:Aven.ViewModels.SettingsViewModel.savePreferencesCommand">
+            <summary>The backing field for <see cref="P:Aven.ViewModels.SettingsViewModel.SavePreferencesCommand"/>.</summary>
+        </member>
+        <member name="P:Aven.ViewModels.SettingsViewModel.SavePreferencesCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Aven.ViewModels.SettingsViewModel.SavePreferencesAsync"/>.</summary>
+        </member>
+        <member name="F:Aven.ViewModels.SettingsViewModel.deleteAllDataCommand">
+            <summary>The backing field for <see cref="P:Aven.ViewModels.SettingsViewModel.DeleteAllDataCommand"/>.</summary>
+        </member>
+        <member name="P:Aven.ViewModels.SettingsViewModel.DeleteAllDataCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Aven.ViewModels.SettingsViewModel.DeleteAllDataAsync"/>.</summary>
+        </member>
+        <member name="T:Aven.ViewModels.SituationsViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:Aven.ViewModels.SituationsViewModel.Situations">
+            <inheritdoc cref="F:Aven.ViewModels.SituationsViewModel._situations"/>
+        </member>
+        <member name="F:Aven.ViewModels.SituationsViewModel.selectSituationCommand">
+            <summary>The backing field for <see cref="P:Aven.ViewModels.SituationsViewModel.SelectSituationCommand"/>.</summary>
+        </member>
+        <member name="P:Aven.ViewModels.SituationsViewModel.SelectSituationCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:Aven.ViewModels.SituationsViewModel.SelectSituationAsync(Aven.Models.Situation)"/>.</summary>
+        </member>
+        <member name="F:Aven.ViewModels.SituationsViewModel.selectUnknownSituationCommand">
+            <summary>The backing field for <see cref="P:Aven.ViewModels.SituationsViewModel.SelectUnknownSituationCommand"/>.</summary>
+        </member>
+        <member name="P:Aven.ViewModels.SituationsViewModel.SelectUnknownSituationCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Aven.ViewModels.SituationsViewModel.SelectUnknownSituationAsync"/>.</summary>
+        </member>
+        <member name="T:Aven.Resource">
+            <summary>
+            Android Resource Designer class.
+            Exposes the Android Resource designer assembly into the project Namespace.
+            </summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsBusy">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsBusy" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Title">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Title" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.RecommendedExercises">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "RecommendedExercises" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.AllExercises">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "AllExercises" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SituationId">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SituationId" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.CurrentInput">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "CurrentInput" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.PhaseName">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "PhaseName" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.PhaseText">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "PhaseText" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.CircleScale">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "CircleScale" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsRunning">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsRunning" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.OutcomeInput">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "OutcomeInput" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ActionInput">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ActionInput" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsBreathingIn">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsBreathingIn" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SelectedOption">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SelectedOption" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.TaskInput">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "TaskInput" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.FirstStepInput">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "FirstStepInput" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.FavoriteExercises">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "FavoriteExercises" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsEmpty">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsEmpty" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ReflectionInput">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ReflectionInput" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ResetExercises">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ResetExercises" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Videos">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Videos" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Sessions">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Sessions" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Preferences">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Preferences" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Situations">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Situations" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsBusy">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsBusy" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Title">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Title" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.RecommendedExercises">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "RecommendedExercises" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.AllExercises">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "AllExercises" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SituationId">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SituationId" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.CurrentInput">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "CurrentInput" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.PhaseName">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "PhaseName" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.PhaseText">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "PhaseText" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.CircleScale">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "CircleScale" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsRunning">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsRunning" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.OutcomeInput">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "OutcomeInput" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ActionInput">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ActionInput" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsBreathingIn">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsBreathingIn" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SelectedOption">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SelectedOption" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.TaskInput">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "TaskInput" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.FirstStepInput">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "FirstStepInput" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.FavoriteExercises">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "FavoriteExercises" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsEmpty">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsEmpty" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ReflectionInput">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ReflectionInput" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ResetExercises">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ResetExercises" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Videos">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Videos" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Sessions">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Sessions" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Preferences">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Preferences" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Situations">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Situations" generated properties.</summary>
+        </member>
+    </members>
+</doc>

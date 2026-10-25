@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Aven.Tests/Aven.Tests.csproj" />
+  <Project Path="Aven/Aven.csproj" />
+</Solution>
